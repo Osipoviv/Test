@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<settings>
+    <HomePage>https://yandex.ru</HomePage>
+    <CountElementsInPage>12</CountElementsInPage>
+    <xPath>
+        <Market>.//*[@data-id='market']</Market>
+        <PCInMarket>.//*/ul[@class='topmenu__list']/li/a[text()='Компьютеры']</PCInMarket>
+        <PCInMarketCheck>.//*/h1[@title='Компьютерная техника']</PCInMarketCheck>
+        <AdvancedSearchInCategory>.//*[contains(text()\,"Расширенный поиск")]</AdvancedSearchInCategory>
+        <AdvancedSearchInCategoryCheck>.//*[@class='layout__col layout__col_search-filters_visible i-bem']</AdvancedSearchInCategoryCheck>
+        <BtnAdvancedSearchApply>.//*/button/span[text()='Применить']/parent::button</BtnAdvancedSearchApply>
+        <BtnAdvancedSearchApplyCheck>.//*[contains(@class\,'snippet-card clearfix i-bem')]/div[1]/a/img</BtnAdvancedSearchApplyCheck>
+        <AdvancedSearchPricefrom>.//*[@id='glf-pricefrom-var']</AdvancedSearchPricefrom>
+        <Load>.//*[contains(@class,'spin2_progress_yes')]</Load>
+        <AdvancedSearchPriceto>.//*[@id='glf-priceto-var']</AdvancedSearchPriceto>
+        <CountElementsInPage>.//*[contains(@class\,'snippet-card clearfix i-bem')]</CountElementsInPage>
+        <NameFirstElement>.//*[@class='snippet-card__header-text']</NameFirstElement>
+        <HeaderSearch>.//*[@id='header-search']</HeaderSearch>
+        <BtnHeaderSearchgoryInPc>.//*[@class='suggest2-form__node']/button</BtnHeaderSearchgoryInPc>
+        <TitleInProductPage>.//*/h1[@title='$name']</TitleInProductPage>
+        <BtnEnotherinAdvancedSearch>.//*/button/span[text()='Ещё']/parent::button</BtnEnotherinAdvancedSearch>
+        <TMP>
+            <CategoryInPc>.//*/div[@class='catalog-menu__list']/a[text()='$cat']</CategoryInPc>
+            <CategoryInPcCheck>.//*/h1[text()='$cat']</CategoryInPcCheck>
+            <Manufacturer>.//*/label[text()='$manufacturer']</Manufacturer>
+        </TMP>
+    </xPath>
+</settings>
