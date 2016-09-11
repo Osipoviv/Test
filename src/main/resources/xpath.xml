@@ -19,7 +19,7 @@
         <HeaderSearch>.//*[@id='header-search']</HeaderSearch>
         <BtnHeaderSearchgoryInPc>.//*[@class='suggest2-form__node']/button</BtnHeaderSearchgoryInPc>
         <TitleInProductPage>.//*/h1[@title='$name']</TitleInProductPage>
-        <BtnEnotherinAdvancedSearch>.//*/button/span[text()='Ещё']/parent::button</BtnEnotherinAdvancedSearch>
+        <BtnEnotherinAdvancedSearch>.//*/h4/span[text()='Производитель']/parent::h4/parent::div/parent::div/*//button/span[text()='Ещё']/parent::button</BtnEnotherinAdvancedSearch>
         <TMP>
             <CategoryInPc>.//*/div[@class='catalog-menu__list']/a[text()='$cat']</CategoryInPc>
             <CategoryInPcCheck>.//*/h1[text()='$cat']</CategoryInPcCheck>

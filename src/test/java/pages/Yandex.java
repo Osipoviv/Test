@@ -54,6 +54,7 @@ public class Yandex {
 
     public boolean setManufacturer(List<String> manufacturers) {
         clickByXpath(config.getString("xPath.BtnEnotherinAdvancedSearch"));
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(config.getString("xPath.BtnEnotherinAdvancedSearch"))));
         for (String manufacturer : manufacturers) {
 
             if (!waitUntil(config.getString("xPath.TMP.Manufacturer").replace("$manufacturer", manufacturer))) {
